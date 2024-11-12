@@ -24,3 +24,16 @@ m = batman.TransitModel(params, t)        #initializes the model
 flux = m.light_curve(params)              #calculates light curve
 plt.plot(t, flux, label = params.limb_dark)
 plt.savefig("HD73583Ac_asssignment1_taskF.png")
+
+"""
+In task A assignment 2 we need just add names all 
+the axes with the correct unit measurements
+"""
+plt.figure()
+plt.plot(t, flux, label=params.limb_dark)
+plt.xlabel("Time from central transit (days)") 
+plt.ylabel("Relative flux")              
+plt.title("Transit Light Curve of Planet HD73583Ac")  
+plt.legend()
+plt.savefig("HD73583Ac_assignment2_taskA.png") 
+

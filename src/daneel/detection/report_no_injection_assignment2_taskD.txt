@@ -16,8 +16,6 @@ Confusion Matrix - Dev Set
 [[558   7]
  [  0   5]]
 ------------
- 
-
 
 gaussian
 Train Set Error 0.00019657951641438576

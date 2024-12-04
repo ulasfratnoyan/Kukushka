@@ -1,0 +1,50 @@
+[Chemistry]
+chemistry_type = taurex
+fill_gasses = H2, He
+ratio = 0.172
+
+	[H2O]
+	gas_type = constant
+	ratio = 0.009373178687736291
+
+	[CH4]
+	gas_type = constant
+	ratio = 0.0062189535934811906
+	
+	[CO2]
+	gas_type = constant
+	ratio = 0.0038655172649309237
+
+	[CO]
+	gas_type = constant
+	ratio = 0.005029114752432798
+
+[Temperature]
+profile_type = isothermal
+T = 503
+
+[Pressure]
+profile_type = Simple
+atm_min_pressure = 1e-0
+atm_max_pressure = 1e6
+nlayers = 30
+
+[Planet]
+planet_type = Simple
+planet_mass = 0.0302
+planet_radius = 0.2436
+
+[Star]
+star_type = blackbody
+temperature = 4511
+radius = 0.71
+
+[Model]
+model_type = Transmission
+
+	[[Absorption]]
+
+	[[CIA]]
+	cia_pairs = H2-H2, H2-He
+
+	[[Rayleigh]]
